@@ -29,7 +29,7 @@ describe('DismissableBlurb', () => {
         <h1>Welcome to the new feed!</h1>
       </DismissableBlurb>
     );
-    const closeButton = screen.getByRole('button', { name: /x/i });
+    const closeButton = screen.getByRole('button', { name: /Close/i });
     expect(closeButton).toBeInTheDocument();
   });
 
@@ -39,7 +39,7 @@ describe('DismissableBlurb', () => {
         <h1>Welcome to the new feed!</h1>
       </DismissableBlurb>
     );
-    const closeButton = screen.getByRole('button', { name: /x/i });
+    const closeButton = screen.getByRole('button', { name: /Close/i });
     fireEvent.click(closeButton);
     await waitFor(() => {
       expect(
