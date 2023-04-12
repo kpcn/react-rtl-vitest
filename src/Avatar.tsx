@@ -5,8 +5,7 @@ type AvatarProps = {
   alt?: string;
 };
 
-export const FALLBACK_AVATAR_URL =
-  'https://avatars.githubusercontent.com/u/1883622?v=4';
+export const FALLBACK_AVATAR_URL = 'https://avatars.githubusercontent.com/u';
 export const FALLBACK_AVATAR_ALT_TEXT = 'Avatar image';
 
 const Avatar = ({
